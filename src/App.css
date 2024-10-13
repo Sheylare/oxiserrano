@@ -1,0 +1,675 @@
+#root {
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden; /* Evitar el desplazamiento horizontal */
+}
+
+/* Header Styles*/
+.header-card {
+  background-color: rgb(42, 96, 133);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header-card h2 {
+  background-color: rgb(42, 96, 133);
+  color: azure;
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  margin-top: 3vh;
+}
+
+.header-card button {
+  background-color: rgb(74, 131, 168);
+  color: azure;
+  margin: 5px 0; /* Eliminar margen */
+}
+.header-card i {
+  margin: 0 0.5vw;
+}
+/* End Header Styles */
+
+/* Navbar Styles*/
+#navbar {
+  background-color: white;
+}
+
+.nav-links {
+  justify-content: flex-end;
+}
+
+.nav-item {
+  color: rgb(42, 96, 133);
+  font-weight: bold;
+  margin-left: 4vw;
+}
+
+/* End Navbar Styles */
+
+/* Footer Styles */
+.footer {
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+  gap: 10vw;
+  width: 100vw;
+  padding: 3vh;
+  background-color: rgb(42, 96, 133);
+  color: #edf6f8;
+}
+
+.footer h4 {
+  font-size: x-small;
+}
+.footer h5 {
+  font-size: x-small;
+}
+.footer-icons a {
+  color: azure;
+  font-weight: bolder;
+  margin-left: 1vw;
+}
+
+/* End Footer Styles */
+
+/* HomePage Styles */
+
+.hero-carousel-image {
+  width: 100%;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.carousel-caption {
+  color: rgb(230, 234, 247);
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 12.5vh;
+}
+
+.products-card {
+  margin: 8vh auto; /* Centrar usando auto en margen */
+  display: flex;
+  justify-content: center; /* Centrar contenido */
+  padding: 0 2vw;
+  gap: 4%;
+  text-align: center;
+  width: 100%;
+}
+
+.card-content {
+  border-color: #2858a1;
+}
+
+.card-content:hover {
+  box-shadow: 0 0 0 0.2rem rgba(96, 150, 204, 0.568);
+}
+
+.card-image {
+  width: 85%;
+}
+
+.hero-description h4 {
+  color: rgb(186, 214, 228);
+  font-weight: 350;
+  display: flex;
+  margin-top: 5vh;
+  margin-left: 4vw;
+  margin-right: 10vw;
+}
+.info-section {
+  color: rgb(42, 96, 133);
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 10vh;
+}
+
+.info-section h1 {
+  color: rgba(3, 21, 37, 0.911);
+}
+.services-info {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 8vh;
+}
+.card-info {
+  background-color: rgba(72, 140, 185, 0.877);
+  color: azure;
+  width: 23%;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 2vh;
+}
+
+.card-info:hover {
+  box-shadow: 0 0 0 0.2rem rgba(6, 51, 95, 0.658);
+}
+.image-container {
+  font-size: 50px;
+}
+
+.map-location {
+  width: 100%;
+  height: 65vh;
+  margin-top: 5vh;
+  padding: 20px;
+  text-align: center;
+  color: rgb(42, 96, 133);
+}
+.map-location h2 {
+  color: rgba(3, 21, 37, 0.911);
+  font-size: 3em;
+  line-height: 1.1;
+  margin-bottom: 1vh;
+}
+/* End HomePage Styles */
+
+/* ContactPage Styles */
+.contact-page {
+  color: azure;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#505f6e5e, rgba(171, 197, 207, 0.3)),
+    url("./assets/images/oxygen-material.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.contact-title {
+  color: rgba(217, 226, 233, 0.911);
+  font-size: 4.5em;
+  text-align: center;
+  margin: 5vh auto;
+  padding: 0 1vw;
+}
+
+.contact-cards {
+  color: rgb(224, 228, 231);
+  background-color: rgba(113, 176, 218, 0.185);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10vw;
+  margin-top: 5vh;
+  margin-bottom: 8vh;
+}
+
+.contact-info {
+  color: rgb(42, 96, 133);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3vh;
+}
+
+.contact-info h3 {
+  display: flex;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.contact-info i {
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.schedule-card {
+  color: rgb(42, 96, 133);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.schedule-card h2 {
+  font-weight: bolder;
+}
+
+.schedule-card i {
+  font-size: 35px;
+}
+.map {
+  width: 100%;
+  height: 65vh;
+  margin-top: 5vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.map h2 {
+  font-weight: bolder;
+  color: rgb(42, 96, 133);
+  font-size: 2rem;
+}
+
+/* End ContactPage Styles */
+
+/*  WhatsappButton Styles */
+.whatsapp-button {
+  position: fixed;
+  bottom: 85px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button:hover {
+  background-color: #1ba069;
+}
+
+.whatsapp-icon {
+  width: 100px;
+  height: 30px;
+}
+
+/* End WhatsappButton Styles */
+
+/* AboutPage Styles */
+
+.about-card {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+.about-card img {
+  width: 35vw;
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+}
+.about-text {
+  color: rgb(42, 96, 133);
+  width: 40vw;
+
+  margin-right: 5vw;
+  text-align: justify;
+}
+.about-text img {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+/* End AboutPage Styles */
+
+/* ServicesPage Styles */
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+
+.service-card-one:hover {
+  box-shadow: 0 0 0 0.2rem rgba(44, 94, 143, 0.692);
+}
+
+.service-card-one {
+  height: 75%;
+  background: linear-gradient(#505f6e86, rgba(171, 197, 207, 0.3)),
+    url("./assets/images/tanque.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5vh;
+}
+.service-card-two:hover {
+  box-shadow: 0 0 0 0.2rem rgba(44, 94, 143, 0.692);
+}
+
+.service-card-two {
+  height: 75%;
+  background: linear-gradient(#505f6e86, rgba(171, 197, 207, 0.3)),
+    url("./assets/images/concentrador-oxg.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5vh;
+}
+
+.service-card-three:hover {
+  box-shadow: 0 0 0 0.2rem rgba(44, 94, 143, 0.692);
+}
+.service-card-three {
+  height: 85%;
+  background: linear-gradient(#505f6e86, rgba(171, 197, 207, 0.3)),
+    url("./assets/images/oxigeno.jpeg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5vh;
+}
+
+.service-text {
+  color: azure;
+  margin-top: 5vh;
+}
+
+/* End ServicesPage Styles */
+
+/* ProductsPage Styles */
+
+.products h1 {
+  text-align: center;
+  color: rgba(21, 45, 73, 0.911);
+  font-size: 2.7em;
+  font-weight: bolder;
+  line-height: 1.1;
+  margin-top: 5vh;
+}
+
+.products h2 {
+  text-align: center;
+  color: rgba(21, 45, 73, 0.911);
+  text-shadow: 2px 2px 5px rgba(13, 42, 85, 0.3);
+  font-size: 1.8em;
+  font-weight: bolder;
+  line-height: 1.1;
+  margin-top: 29vh;
+}
+.products-section {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  padding: 0 1vw;
+  margin: 5vh auto;
+  gap: 15px;
+}
+
+.product-card1 {
+  width: 50vw;
+  height: 62vh;
+  background: linear-gradient(#b0bdcf86, rgba(171, 197, 207, 0.116)),
+    url("./assets/images/Regulador-Oxigeno.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+.product-card1:hover {
+  transform: scale(1.05); /* Efecto de zoom al hacer hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card2 {
+  width: 50vw;
+  height: 62vh;
+  background: linear-gradient(#b0bdcf86, rgba(171, 197, 207, 0.116)),
+    url("./assets/images/cilindro-portatil.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card2:hover {
+  transform: scale(1.05); /* Efecto de zoom al hacer hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card3 {
+  width: 55vw;
+  height: 62vh;
+  background: linear-gradient(#b0bdcf86, rgba(171, 197, 207, 0.116)),
+    url("./assets/images/concentrador-philips.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card3:hover {
+  transform: scale(1.05); /* Efecto de zoom al hacer hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card4 {
+  width: 50vw;
+  height: 62vh;
+  background: linear-gradient(#b0bdcf86, rgba(171, 197, 207, 0.116)),
+    url("./assets/images/descartables-oxg.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  cursor: pointer;
+}
+.product-card4:hover {
+  transform: scale(1.05); /* Efecto de zoom al hacer hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-card5 {
+  width: 50vw;
+  height: 62vh;
+  background: linear-gradient(#b0bdcf86, rgba(155, 180, 190, 0.041)),
+    url("./assets/images/nebulizador-pediatrico.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.product-card5:hover {
+  transform: scale(1.05); /* Efecto de zoom al hacer hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de tarjeta seleccionada */
+.seleccionada {
+  border: 2px solid #274f79; /* Borde azul al seleccionar */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+  transform: scale(1.05); /* Un pequeño zoom al seleccionarla */
+}
+
+.products-text {
+  color: rgba(217, 226, 233, 0.911);
+  font-size: 1em;
+  margin: 5vh auto;
+  padding: 0 1vw;
+}
+.reguladores-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  padding: 0 2vw;
+  margin: 1vh auto;
+  gap: 25px;
+}
+
+.card-images {
+  width: 125px;
+}
+
+.card-content {
+  width: 18vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(3, 23, 77, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-content:hover {
+  border: none;
+  transform: scale(1.1); /* Efecto de zoom */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más fuerte cuando haces hover */
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.cilindros-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  padding: 0 2vw;
+  margin: 1vh auto;
+  gap: 25px;
+}
+
+.concentradores-section,
+.descartables-section,
+.otros-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  padding: 0 2vw;
+  margin: 1vh auto;
+  gap: 15px;
+}
+
+/*  End ProductsPage Styles */
+
+@media (max-width: 768px) {
+  .header-card h2 {
+    font-size: x-small;
+  }
+
+  .header-card button {
+    height: auto;
+    margin: 1vh 2vw;
+    font-size: smaller;
+  }
+  .home-section {
+    width: 100vw; /* Asegúrate de que el contenedor principal ocupe el 100% */
+    max-width: none; /* Evita restricciones de ancho */
+    padding: 0 10px; /* Espaciado lateral */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+
+  .home-section h3 {
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 1.1;
+    margin-bottom: 5vh;
+  }
+
+  .hero-carousel-image {
+    width: 100vw;
+    margin: 0 3px;
+  }
+
+  .products-card {
+    display: flex;
+    flex-direction: column; /* Mantiene las tarjetas en columna */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Centra las tarjetas horizontalmente */
+    margin: 0 auto; /* Centrar el contenedor */
+    width: 100%; /* Asegura que ocupe el ancho máximo permitido */
+    padding: 0 10px; /* Añadir un poco de padding lateral */
+    gap: 15px; /* Espacio entre las tarjetas */
+  }
+
+  .card-content {
+    width: 50%; /* Asegura que las tarjetas no sean demasiado anchas */
+    margin: 10px 0; /* Espacio vertical entre las tarjetas */
+    gap: 10px;
+  }
+
+  .card-title {
+    font-size: x-small;
+  }
+
+  .contact-page{
+    width: 100vw; /* Asegúrate de que el contenedor principal ocupe el 100% */
+    max-width: none; /* Evita restricciones de ancho */
+    padding: 0 10px; /* Espaciado lateral */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+  }
+  .products-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .product-card1,
+  .product-card2,
+  .product-card3,
+  .product-card4,
+  .product-card5 {
+    width: 80vw;
+    height: auto;
+  }
+
+  .products h2 {
+    text-align: center;
+    color: rgba(21, 45, 73, 0.911);
+    text-shadow: 2px 2px 5px rgba(13, 42, 85, 0.3);
+    font-size: 0.8em;
+    font-weight: bolder;
+    line-height: 1.1;
+    margin-top: 22vh;
+  }
+  .services-info {
+    display: flex;
+    flex-direction: column; /* Mantiene las tarjetas en columna */
+    justify-content: center;
+    align-items: center; /* Centra las tarjetas horizontalmente */
+    margin: 0 auto; /* Centrar el contenedor */
+    width: 100%; /* Asegura que ocupe el ancho máximo permitido */
+    height: auto;
+    padding: 0 10px; /* Añadir un poco de padding lateral */
+    gap: 15px; /* Espacio entre las tarjetas */
+  }
+
+  .card-info {
+    width: 85%; /* Asegura que las tarjetas no sean demasiado anchas */
+    margin: 10px 0; /* Espacio vertical entre las tarjetas */
+  }
+}
