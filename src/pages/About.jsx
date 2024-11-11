@@ -9,7 +9,6 @@ function About() {
         <img src={img1} alt="persona utilizando oxígeno" />
       </div>
       <div className="about-text">
-        <img src={img2} alt= "Logo"/>
         <p>
           En <b>Oxiserrano</b>, llevamos 13 años dedicados a la venta y alquiler de
           oxígeno medicinal, brindando soluciones confiables y de calidad a la

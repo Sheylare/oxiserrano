@@ -539,8 +539,8 @@ body {
 
 .card-content:hover {
   border: none;
-  transform: scale(1.1); /* Efecto de zoom */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más fuerte cuando haces hover */
+  transform: scale(1.1); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
 }
 
 h5 {
@@ -618,6 +618,16 @@ h5 {
     margin: 0 3px;
   }
 
+  .about-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text{
+    width: 80vw;
+  }
+
   .products-card {
     display: flex;
     flex-direction: row; 
@@ -634,9 +644,9 @@ h5 {
   .card-content {
     width: calc(
       50% - 15px
-    ); /* Cada tarjeta ocupa el 50% del ancho disponible menos el gap */
-    max-width: 200px; /* Opcional: Limita el tamaño máximo */
-    height: 150px; /* Para que la tarjeta sea cuadrada */
+    ); 
+    max-width: 200px; 
+    height: 150px; 
   }
 
   .card-title {
@@ -673,10 +683,18 @@ h5 {
     box-sizing: border-box; /* Incluye el padding en el ancho total */
   }
 
-  .contact-cards,
-  .contact-info {
-    width: 80vw;
+  .contact-cards{
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
   }
+  .contact-info h3{
+    font-size: small;
+  }
+  .contact-info h5{
+    font-size: x-small;
+  } 
 
   .contact-page h2 {
     font-size: xx-large;

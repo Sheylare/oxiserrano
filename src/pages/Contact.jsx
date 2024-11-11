@@ -6,9 +6,9 @@ function Contact() {
       <div className="contact-page">
         <motion.h2
           className="contact-title"
-          initial={{ opacity: 0, y: -50 }} // Posición inicial de la animación
-          animate={{ opacity: 1, y: 0 }} // Estado final de la animación
-          transition={{ duration: 1.2 }} // Duración de la animación
+          initial={{ opacity: 0, y: -50 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 1.2 }} 
         >
           Información de Contacto
         </motion.h2>
