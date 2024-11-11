@@ -1,19 +1,17 @@
 import { motion } from "framer-motion";
 
-
 function Contact() {
   return (
-    <div>
+    <div className="contact-section">
       <div className="contact-page">
-      <motion.h2
-              className="contact-title"
-              initial={{ opacity: 0, y: -50 }} // Posición inicial de la animación
-              animate={{ opacity: 1, y: 0 }} // Estado final de la animación
-              transition={{ duration: 1.2 }} // Duración de la animación
-            >
-             Información de Contacto
-            </motion.h2>
-     
+        <motion.h2
+          className="contact-title"
+          initial={{ opacity: 0, y: -50 }} // Posición inicial de la animación
+          animate={{ opacity: 1, y: 0 }} // Estado final de la animación
+          transition={{ duration: 1.2 }} // Duración de la animación
+        >
+          Información de Contacto
+        </motion.h2>
       </div>
       <div className="contact-cards">
         <div className="contact-info">

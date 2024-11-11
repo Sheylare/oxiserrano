@@ -1,4 +1,3 @@
-
 import { Carousel, Button, Card } from "react-bootstrap";
 import heroImg1 from "../assets/images/heroImg1.jpg";
 import heroImg2 from "../assets/images/heroImg2.jpeg";
@@ -44,9 +43,7 @@ function HomePage() {
               <Carousel.Caption>
                 <h3>{item.title}</h3>
                 {index === 2 ? (
-                  <Button variant="light">
-                    {item.description}
-                  </Button>
+                  <Button variant="light">{item.description}</Button>
                 ) : (
                   <p>{item.description}</p>
                 )}
@@ -59,7 +56,7 @@ function HomePage() {
         <Card className="card-content">
           <Card.Body>
             <Card.Title>Reguladores</Card.Title>
-              <Card.Img src={cardImg1} className="card-image img-fluid" />
+            <Card.Img src={cardImg1} className="card-image img-fluid" />
           </Card.Body>
         </Card>
         <Card className="card-content">
