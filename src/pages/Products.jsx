@@ -1,4 +1,4 @@
-import { Card, ListGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { motion } from "framer-motion";
 import regulador from "../assets/images/regulador.png";
 import reguladorVaso from "../assets/images/regulador-vaso.png";
@@ -33,11 +33,20 @@ import silla from "../assets/images/silla.jpg";
 import mochila from "../assets/images/mochila.jpg";
 import agua from "../assets/images/agua.jpg";
 import { useMediaQuery } from "react-responsive";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 function Products() {
   const isSmallScreen = useMediaQuery({ maxWidth: 768 });
+  const location = useLocation();
+  const productData = location.state;
   const [cardSeleccionada, setCardSeleccionada] = useState("");
+
+  useEffect(() => {
+    if (productData) {
+      setCardSeleccionada(productData);
+    }
+  }, [productData]);
 
   const manejarClickCard = (nombre) => {
     setCardSeleccionada(cardSeleccionada === nombre ? "" : nombre);
@@ -125,7 +134,7 @@ function Products() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1.2 }}
                 >
-                  Descartables
+                  Desechables
                 </motion.h2>
               </Card.Body>
             </Card>
@@ -491,7 +500,7 @@ function Products() {
         {cardSeleccionada === "reguladores" && (
           <div className="reguladores-section">
             <Card className="card-content">
-              <Card.Img src={regulador} className="card-images img-fluid" />
+                <Card.Img src={regulador} className="card-images img-fluid" />
 
               <Card.Title>Regulador CGA 870 adulto toma directa</Card.Title>
             </Card>
