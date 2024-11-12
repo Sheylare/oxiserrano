@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div className="contact-section">
       <div className="contact-page">
-        <motion.h2
+        <motion.h2 
           className="contact-title"
           initial={{ opacity: 0, y: -50 }} 
           animate={{ opacity: 1, y: 0 }} 
@@ -15,27 +15,27 @@ function Contact() {
       </div>
       <div className="contact-cards">
         <div className="contact-info">
-          <i class="bi bi-geo-alt-fill"></i>
+          <i className="bi bi-geo-alt-fill"></i>
           <h3> Dirección</h3>
           <h5>Calle Pesantesco Nº36-12 y Mañosca</h5>
         </div>
         <div className="contact-info">
-          <i class="bi bi-telephone-fill"></i>
+          <i className="bi bi-telephone-fill"></i>
           <h3>Teléfono</h3>
           <h5>098 666 0840</h5>
           <h5>099 507 0758</h5>
           <h5>02 2463 994</h5>
         </div>
         <div className="contact-info">
-          <i class="bi bi-envelope-at-fill"></i>
+          <i className="bi bi-envelope-at-fill"></i>
           <h3>Email</h3>
           <h5>oxiserrano@gmail.com</h5>
         </div>
       </div>
       <div className="schedule-card">
         <h2>Horario de Atención</h2>
-        <i class="bi bi-calendar3"></i>
-        <h4>Lunes a viernes</h4>
+        <i className="bi bi-calendar3"></i>
+        <h4>Lunes a Viernes</h4>
         <h5>9h30 a 13h30</h5>
         <h5>14h30 a 18h30</h5>
       </div>
@@ -48,7 +48,6 @@ function Contact() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-              
       </div>
     </div>
   );

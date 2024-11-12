@@ -1,6 +1,4 @@
-import { px } from "framer-motion";
 import img1 from "../assets/images/concentrador-oxigeno.png";
-import img2 from "../assets/images/Logo-OxiSerrano.jpg"
 
 function About() {
   return (

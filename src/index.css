@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -18,9 +24,7 @@ a {
   color: #5885be;
   text-decoration: inherit;
 }
-a:hover {
-  color: #5398f2;
-}
+
 
 body {
   margin: 0;

@@ -8,6 +8,7 @@ import cardImg2 from "../assets/images/descartables.jpg";
 import cardImg3 from "../assets/images/cilindros-oxigeno.png";
 import cardImg4 from "../assets/images/concentrador.jpg";
 import cardImg5 from "../assets/images/portatil.png";
+import { Link, useNavigate } from "react-router-dom";
 
 function HomePage() {
   const carouselItems = [
@@ -29,6 +30,12 @@ function HomePage() {
     },
   ];
 
+  const navigate = useNavigate();
+
+  const handleGoToProducts = (product) => {
+    navigate("/products", { state: product });
+  };
+
   return (
     <div className="home-section">
       <Carousel>
@@ -43,7 +50,11 @@ function HomePage() {
               <Carousel.Caption>
                 <h3>{item.title}</h3>
                 {index === 2 ? (
-                  <Button variant="light">{item.description}</Button>
+                  <p>
+                    <Link to={"/contact"}>
+                      <Button variant="light">{item.description}</Button>
+                    </Link>
+                  </p>
                 ) : (
                   <p>{item.description}</p>
                 )}
@@ -53,13 +64,19 @@ function HomePage() {
         ))}
       </Carousel>
       <div className="products-card">
-        <Card className="card-content">
+        <Card
+          className="card-content"
+          onClick={() => handleGoToProducts("reguladores")}
+        >
           <Card.Body>
             <Card.Title>Reguladores</Card.Title>
             <Card.Img src={cardImg1} className="card-image img-fluid" />
           </Card.Body>
         </Card>
-        <Card className="card-content">
+        <Card
+          className="card-content"
+          onClick={() => handleGoToProducts("descartables")}
+        >
           <Card.Body>
             <Card.Title>Desechables</Card.Title>
             <div className="image-container">
@@ -67,7 +84,10 @@ function HomePage() {
             </div>
           </Card.Body>
         </Card>
-        <Card className="card-content">
+        <Card
+          className="card-content"
+          onClick={() => handleGoToProducts("cilindros")}
+        >
           <Card.Body>
             <Card.Title>Cilindros</Card.Title>
             <div className="image-container">
@@ -75,7 +95,10 @@ function HomePage() {
             </div>
           </Card.Body>
         </Card>
-        <Card className="card-content">
+        <Card
+          className="card-content"
+          onClick={() => handleGoToProducts("concentradoresFiltros")}
+        >
           <Card.Body>
             <Card.Title>Concentradores Fijos</Card.Title>
             <div className="image-container">
@@ -83,7 +106,10 @@ function HomePage() {
             </div>
           </Card.Body>
         </Card>
-        <Card className="card-content">
+        <Card
+          className="card-content"
+          onClick={() => handleGoToProducts("concentradoresFiltros")}
+        >
           <Card.Body>
             <Card.Title>Concentradores Portátiles</Card.Title>
             <div className="image-container">
