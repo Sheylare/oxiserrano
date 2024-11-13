@@ -8,18 +8,22 @@ function About() {
       </div>
       <div className="about-text">
         <p>
-          En <b>Oxiserrano</b>, llevamos 13 años dedicados a la venta y alquiler de
-          oxígeno medicinal, brindando soluciones confiables y de calidad a la
-          ciudad de Quito. Nuestro compromiso es mejorar la calidad de vida de
-          nuestros clientes, ofreciendo equipos y servicios técnicos
-          especializados que cumplen con los más altos estándares de seguridad.
+          En Oxiserrano, llevamos 13 años dedicados a la venta, alquiler y
+          distribución de oxígeno medicinal, brindamos asesoramiento y
+          soluciones confiables a nuestros clientes en la ciudad de Quito.
         </p>
         <p>
-          Nuestro equipo altamente capacitado se enfoca en satisfacer las
-          necesidades específicas de cada paciente e institución, garantizando
-          un servicio rápido, profesional y humano. Gracias a la confianza de
-          familias y profesionales de la salud, hemos construido una sólida
-          reputación en el cuidado respiratorio.
+          Nuestro compromiso es mejorar la calidad de vida de nuestros clientes,
+          ofreciendo una amplia gama de equipos y servicios técnicos
+          especializados para Oxigenoterapia que cumplen con los más altos
+          estándares de seguridad.
+        </p>
+        <p>
+          Contamos con un equipo altamente capacitado que se enfoca en
+          satisfacer las necesidades específicas de cada paciente e institución,
+          garantizando un servicio rápido, profesional y humano. Gracias a la
+          confianza de familias y profesionales de la salud, hemos construido
+          una sólida reputación en el cuidado respiratorio.
         </p>
       </div>
     </div>
