@@ -19,9 +19,9 @@ function HomePage() {
     },
     {
       image: heroImg2,
-      title: "¡Contáctanos hoy!",
+      title: "¡Contáctenos hoy!",
       description:
-        "Ofrecemos SERVICIO A DOMICILIO en el centro norte de Quito para tu mayor comodidad. ",
+        "Ofrecemos SERVICIO A DOMICILIO en el centro norte de Quito para su mayor comodidad. ",
     },
     {
       image: heroImg3,
@@ -66,36 +66,16 @@ function HomePage() {
       <div className="products-card">
         <Card
           className="card-content"
-          onClick={() => handleGoToProducts("reguladores")}
-        >
-          <Card.Body>
-            <Card.Title>Reguladores</Card.Title>
-            <Card.Img src={cardImg1} className="card-image img-fluid" />
-          </Card.Body>
-        </Card>
-        <Card
-          className="card-content"
-          onClick={() => handleGoToProducts("descartables")}
-        >
-          <Card.Body>
-            <Card.Title>Desechables</Card.Title>
-            <div className="image-container">
-              <Card.Img src={cardImg2} className="card-image img-fluid" />
-            </div>
-          </Card.Body>
-        </Card>
-        <Card
-          className="card-content"
           onClick={() => handleGoToProducts("cilindros")}
         >
           <Card.Body>
-            <Card.Title>Cilindros</Card.Title>
+            <Card.Title>Tanques</Card.Title>
             <div className="image-container">
               <Card.Img src={cardImg3} className="card-image img-fluid" />
             </div>
           </Card.Body>
         </Card>
-        <Card
+         <Card
           className="card-content"
           onClick={() => handleGoToProducts("concentradoresFiltros")}
         >
@@ -117,6 +97,29 @@ function HomePage() {
             </div>
           </Card.Body>
         </Card>
+        <Card
+          className="card-content"
+          onClick={() => handleGoToProducts("reguladores")}
+        >
+          <Card.Body>
+            <Card.Title>Reguladores</Card.Title>
+            <Card.Img src={cardImg1} className="card-image img-fluid" />
+          </Card.Body>
+        </Card>
+        <Card
+          className="card-content"
+          onClick={() => handleGoToProducts("descartables")}
+        >
+          <Card.Body>
+            <Card.Title>Desechables</Card.Title>
+            <div className="image-container">
+              <Card.Img src={cardImg2} className="card-image img-fluid" />
+            </div>
+          </Card.Body>
+        </Card>
+
+       
+
       </div>
 
       <div className="info-section">

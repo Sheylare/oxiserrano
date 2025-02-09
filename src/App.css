@@ -92,13 +92,12 @@ body {
   }
 }
 
-.logo-info-footer-small{
+.logo-info-footer-small {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
-
 
 /* End Footer Styles */
 
@@ -370,54 +369,94 @@ body {
 
 /* ServicesPage Styles */
 
-.services-card {
+.services-new{
+  h2{
+    text-align: center;
+    color: rgba(21, 45, 73, 0.911);
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 5vh 0;
+
+  }
+}
+
+.service-container {
   display: flex;
-  flex-direction: column;
-  width: 75%;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
+  flex-direction: row;
+  padding: 0 17vw;
+  height: 60vh;
 }
 
-.service-card-one:hover {
-  box-shadow: 0 0 0 0.2rem rgba(44, 94, 143, 0.692);
-}
-
-.service-card-one {
-  height: 75%;
-  background: linear-gradient(#505f6e86, rgba(171, 197, 207, 0.3)),
+.service-img-one {
+  width: 50%;
+  background: linear-gradient(#505f6e17, rgba(171, 197, 207, 0.3)),
     url("./assets/images/tanque.jpeg");
   background-size: cover;
   background-position: center;
-  margin-bottom: 5vh;
-}
-.service-card-two:hover {
-  box-shadow: 0 0 0 0.2rem rgba(44, 94, 143, 0.692);
 }
 
-.service-card-two {
-  height: 75%;
-  background: linear-gradient(#505f6e86, rgba(171, 197, 207, 0.3)),
+.service-img-two {
+  width: 50%;
+  background: linear-gradient(#505f6e00, rgba(171, 197, 207, 0.3)),
     url("./assets/images/concentrador-oxg.jpeg");
   background-size: cover;
   background-position: center;
-  margin-bottom: 5vh;
 }
 
-.service-card-three:hover {
-  box-shadow: 0 0 0 0.2rem rgba(44, 94, 143, 0.692);
-}
-.service-card-three {
-  height: 85%;
-  background: linear-gradient(#505f6e86, rgba(171, 197, 207, 0.3)),
+.service-img-three {
+  width: 50%;
+  background: linear-gradient(#505f6e86, rgba(171, 197, 207, 0.1)),
     url("./assets/images/oxigeno.jpeg");
   background-size: cover;
   background-position: center;
-  margin-bottom: 5vh;
 }
 
-.service-text {
+.service-img-four {
+  width: 50%;
+  background: linear-gradient(#505f6e86, rgba(171, 197, 207, 0.1)),
+    url("./assets/images/instalacion-oxigeno.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.service-img-five {
+  width: 50%;
+  background: linear-gradient(#505f6e86, rgba(171, 197, 207, 0.05)),
+    url("./assets/images/distribucion-oxg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.service-img-six {
+  width: 50%;
+  background: linear-gradient(#505f6e86, rgba(171, 197, 207, 0.1)),
+    url("./assets/images/prueba.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.service-cardText {
+  background-color: rgb(74, 131, 168);
   color: azure;
-  margin-top: 5vh;
+  width: 50%;
+  gap: 1rem;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@media (max-width: 768px){
+  .service-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .service-cardText{
+    width: 100%;
+  }
 }
 
 /* End ServicesPage Styles */
@@ -450,7 +489,6 @@ body {
   }
 
   .card-content {
-    
   }
 }
 
@@ -821,7 +859,7 @@ h5 {
     height: auto;
   }
 
-  .products{
+  .products {
     h2 {
       text-align: center;
       color: rgba(21, 45, 73, 0.911);
@@ -832,10 +870,10 @@ h5 {
       margin-top: 22vh;
     }
 
-    .card-content .card-title{
+    .card-content .card-title {
       font-size: xx-small;
     }
-  } 
+  }
 
   .services-info {
     display: flex;
@@ -859,17 +897,17 @@ h5 {
     z-index: 1000; /* Asegúrate de que siga estando por encima */
   }
 
-  .footer{
+  .footer {
     flex-direction: column;
     justify-content: space-between;
     gap: 3vh;
-    .contactanos{
+    .contactanos {
       display: flex;
       flex-direction: column;
       align-items: end;
       justify-content: end;
     }
-    .footer-icons{
+    .footer-icons {
       display: flex;
       flex-direction: row;
       gap: 5vw;
