@@ -369,22 +369,21 @@ body {
 
 /* ServicesPage Styles */
 
-.services-new{
-  h2{
+.services-new {
+  h2 {
     text-align: center;
     color: rgba(21, 45, 73, 0.911);
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 500;
     line-height: 1.1;
     margin: 5vh 0;
-
   }
 }
 
 .service-container {
   display: flex;
   flex-direction: row;
-  padding: 0 17vw;
+  padding: 0 10vw;
   height: 60vh;
 }
 
@@ -439,26 +438,55 @@ body {
 .service-cardText {
   background-color: rgb(74, 131, 168);
   color: azure;
+  font-size: 0.85em;
   width: 50%;
-  gap: 1rem;
+  gap: 0.5rem;
   padding: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-
-@media (max-width: 768px){
-  .service-container{
-    display: flex;
+@media (max-width: 768px) {
+  .service-container {
     flex-direction: column;
     width: 100%;
+    height: auto;
+    padding: 0;
   }
-  .service-cardText{
+
+  .service-cardText {
     width: 100%;
+    padding: 2rem;
     
+    min-height: 45vh;
   }
-  
+
+  .service-img-one,
+  .service-img-two,
+  .service-img-three,
+  .service-img-four,
+  .service-img-five,
+  .service-img-six {
+    width: 100%;
+    height: 40vh; /* Asegura que la imagen tenga un tamaño visible */
+    min-height: 200px; /* Evita que desaparezca si el contenido es pequeño */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .service-img-one{
+    background-image: linear-gradient(#505f6e17, rgba(171, 197, 207, 0.3)),
+    url("./assets/images/tanque.jpeg");
+  }
+
+  .service-img-two{
+    background-image: linear-gradient(#505f6e00, rgba(171, 197, 207, 0.3)),
+    url("./assets/images/concentrador-oxg.jpeg");;
+  }
+
+ 
 }
 
 /* End ServicesPage Styles */
@@ -467,7 +495,7 @@ body {
 
 .products {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
 
@@ -488,9 +516,6 @@ body {
     font-weight: 500;
     line-height: 1.1;
     margin-top: 29vh;
-  }
-
-  .card-content {
   }
 }
 
