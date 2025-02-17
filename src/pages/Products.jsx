@@ -441,7 +441,7 @@ function Products() {
                 animate={{ opacity: 1, y: 0 }} // Estado final de la animación
                 transition={{ duration: 1.2 }} // Duración de la animación
               >
-                Cilindros
+                Tanques
               </motion.h2>
             </Card.Body>
           </Card>
@@ -536,14 +536,14 @@ function Products() {
                 <Card.Img src={cilindros} className="card-images img-fluid" />
               </div>
               <Card.Title>
-                Cilindros de oxígeno medicial tipo D, E, M60, M122
+                Tanque de oxígeno medicial tipo D, E, M60, M122
               </Card.Title>
             </Card>
             <Card className="card-content">
               <div>
                 <Card.Img src={cilindro} className="card-images img-fluid" />
               </div>
-              <Card.Title>Cilindros de oxígeno medicial de 6M3</Card.Title>
+              <Card.Title>Tanque de oxígeno medicial de 6M3</Card.Title>
             </Card>
           </div>
         )}
