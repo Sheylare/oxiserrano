@@ -191,14 +191,17 @@ body {
   background-color: rgba(72, 140, 185, 0.877);
   color: azure;
   width: 23%;
+  p {
+    font-size: 0.8rem;
+  }
 }
 
 .card-info:hover {
-  box-shadow: 0 0 0 0.2rem rgba(6, 51, 95, 0.658);
+  box-shadow: 0 0 0 0.2rem rgba(6, 51, 95, 0.2);
 }
 
 .image-container {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .map-location {
@@ -306,6 +309,27 @@ body {
   color: rgb(42, 96, 133);
   font-size: 2rem;
   margin-bottom: 4vh;
+}
+
+@media (max-width: 768px) {
+
+  .contact-title{
+    padding: 0 2vw;
+  }
+  .contact-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+  }
+
+  .contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 /* End ContactPage Styles */
@@ -446,7 +470,6 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
 @media (max-width: 768px) {
   .service-container {
     flex-direction: column;
@@ -458,7 +481,7 @@ body {
   .service-cardText {
     width: 100%;
     padding: 2rem;
-    
+
     min-height: 45vh;
   }
 
@@ -476,17 +499,15 @@ body {
     background-repeat: no-repeat;
   }
 
-  .service-img-one{
+  .service-img-one {
     background-image: linear-gradient(#505f6e17, rgba(171, 197, 207, 0.3)),
-    url("./assets/images/tanque.jpeg");
+      url("./assets/images/tanque.jpeg");
   }
 
-  .service-img-two{
+  .service-img-two {
     background-image: linear-gradient(#505f6e00, rgba(171, 197, 207, 0.3)),
-    url("./assets/images/concentrador-oxg.jpeg");;
+      url("./assets/images/concentrador-oxg.jpeg");
   }
-
- 
 }
 
 /* End ServicesPage Styles */
@@ -495,7 +516,7 @@ body {
 
 .products {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -721,7 +742,7 @@ h5 {
     margin-right: 2vh;
     a {
       button {
-        font-size: x-small;
+        font-size: 0.75rem;
       }
     }
   }
@@ -803,7 +824,7 @@ h5 {
   }
 
   .card-content {
-    width: calc(50% - 15px);
+    width: calc(50% - 12.5px);
     max-width: 200px;
     height: 150px;
   }
@@ -845,15 +866,12 @@ h5 {
 
   .contact-cards {
     width: 100%;
-
     display: flex;
     justify-content: center;
-  }
-  .contact-info h3 {
-    font-size: small;
-  }
-  .contact-info h5 {
-    font-size: x-small;
+    h3{
+      font-weight: 500;
+    }
+
   }
 
   .contact-page h2 {
@@ -886,19 +904,34 @@ h5 {
     height: auto;
   }
 
+  .reguladores-section,
+  .cilindros-section,
+  .descartables-section,
+  .concentradores-section,
+  .otros-section{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
   .products {
+    h1{
+      font-size: 2em;
+    }
     h2 {
       text-align: center;
       color: rgba(21, 45, 73, 0.911);
       text-shadow: 2px 2px 5px rgba(13, 42, 85, 0.3);
-      font-size: 0.8em;
-      font-weight: bolder;
+      font-size: 1.2em;
+      font-weight: 525;
       line-height: 1.1;
-      margin-top: 22vh;
+      margin-top: 11vh;
+
     }
 
+
     .card-content .card-title {
-      font-size: xx-small;
+      font-size: 0.75rem;
     }
   }
 
