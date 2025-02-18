@@ -408,7 +408,7 @@ body {
   display: flex;
   flex-direction: row;
   padding: 0 10vw;
-  height: 60vh;
+  height: 67vh;
 }
 
 .service-img-one {
@@ -422,7 +422,7 @@ body {
 .service-img-two {
   width: 50%;
   background: linear-gradient(#505f6e00, rgba(171, 197, 207, 0.3)),
-    url("./assets/images/concentrador-oxg.jpeg");
+    url("./assets/images/philipsEverflo.jpg");
   background-size: cover;
   background-position: center;
 }

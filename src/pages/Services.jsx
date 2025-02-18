@@ -74,7 +74,7 @@ function Services() {
         <div className="service-container">
           <div className="service-img-five"></div>
           <div className="service-cardText">
-            <h4>Distribución de oxigeno medicinal</h4>
+            <h4>Distribución de Oxígeno Medicinal</h4>
             <p>
               Recargamos todos los tamaños de tanques de oxígeno medicinal que
               usted necesite en su domicilio, oficina o cualquier centro de
@@ -85,7 +85,7 @@ function Services() {
         <div className="service-container">
           <div className="service-img-six"></div>
           <div className="service-cardText">
-            <h4>Pruebas hidrostáticas para tanques de oxígeno.</h4>
+            <h4>Pruebas Hidrostáticas para Tanques de Oxígeno.</h4>
             <p>
               Realizamos las pruebas hidrostáticas indispensables para el uso
               correcto de tanques de oxígeno, que se deben realizar cada 5 años,
@@ -166,7 +166,7 @@ function Services() {
         <div className="service-container">
           <div className="service-img-five"></div>
           <div className="service-cardText">
-            <h4>Distribución de oxigeno medicinal</h4>
+            <h4>Distribución de Oxigeno Medicinal</h4>
             <p>
               Recargamos todos los tamaños de tanques de oxígeno medicinal que
               usted necesite en su domicilio, oficina o cualquier centro de
@@ -176,7 +176,7 @@ function Services() {
         </div>
         <div className="service-container">
           <div className="service-cardText">
-            <h4>Pruebas hidrostáticas para tanques de oxígeno.</h4>
+            <h4>Pruebas Hidrostáticas para Tanques de Oxígeno.</h4>
             <p>
               Realizamos las pruebas hidrostáticas indispensables para el uso
               correcto de tanques de oxígeno, que se deben realizar cada 5 años,

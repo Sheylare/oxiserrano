@@ -34,7 +34,7 @@ import mochila from "../assets/images/mochila.jpg";
 import agua from "../assets/images/agua.jpg";
 import { useMediaQuery } from "react-responsive";
 import { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Products() {
   const isSmallScreen = useMediaQuery({ maxWidth: 768 });
@@ -55,7 +55,7 @@ function Products() {
   if (isSmallScreen) {
     return (
       <div className="products">
-        <h1>Categorías</h1>
+        <h1 onClick={() => manejarClickCard("")}>Categorías</h1>{" "}
         <div className="products-section">
           {cardSeleccionada === "" || cardSeleccionada === "reguladores" ? (
             <Card
@@ -191,7 +191,6 @@ function Products() {
             </Card>
           </div>
         )}
-
         {cardSeleccionada === "cilindros" && (
           <div className="cilindros-section">
             <Card className="card-content">
@@ -210,7 +209,6 @@ function Products() {
             </Card>
           </div>
         )}
-
         {cardSeleccionada === "concentradoresFiltros" && (
           <div className="concentradores-section">
             <Card className="card-content">
@@ -342,7 +340,6 @@ function Products() {
             </Card>
           </div>
         )}
-
         {cardSeleccionada === "otros" && (
           <div className="otros-section">
             <Card className="card-content">
@@ -500,7 +497,7 @@ function Products() {
         {cardSeleccionada === "reguladores" && (
           <div className="reguladores-section">
             <Card className="card-content">
-                <Card.Img src={regulador} className="card-images img-fluid" />
+              <Card.Img src={regulador} className="card-images img-fluid" />
 
               <Card.Title>Regulador CGA 870 adulto toma directa</Card.Title>
             </Card>
