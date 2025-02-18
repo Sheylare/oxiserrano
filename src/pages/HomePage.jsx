@@ -1,12 +1,12 @@
 import { Carousel, Button, Card } from "react-bootstrap";
-import heroImg1 from "../assets/images/heroImg1.jpg";
-import heroImg2 from "../assets/images/heroImg2.jpeg";
-import heroImg3 from "../assets/images/heroImg3.jpeg";
+import heroImg1 from "../assets/images/heroImg1.webp";
+import heroImg2 from "../assets/images/heroImg2.webp";
+import heroImg3 from "../assets/images/heroImg3.webp";
 
 import cardImg1 from "../assets/images/Reguladores.png";
-import cardImg2 from "../assets/images/descartables.jpg";
+import cardImg2 from "../assets/images/descartables.webp";
 import cardImg3 from "../assets/images/cilindros-oxigeno.png";
-import cardImg4 from "../assets/images/concentrador.jpg";
+import cardImg4 from "../assets/images/concentrador.webp";
 import cardImg5 from "../assets/images/portatil.png";
 import { Link, useNavigate } from "react-router-dom";
 
