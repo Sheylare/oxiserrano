@@ -34,7 +34,7 @@ import mochila from "../assets/images/mochila.jpg";
 import agua from "../assets/images/agua.jpg";
 import { useMediaQuery } from "react-responsive";
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 function Products() {
   const isSmallScreen = useMediaQuery({ maxWidth: 768 });
